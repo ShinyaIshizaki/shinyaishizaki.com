@@ -20,6 +20,17 @@ permalink: /
   </p>
 </section>
 
+<section class="skills-overview">
+  <h2>Core Skills</h2>
+  <ul>
+    <li>Backend Development</li>
+    <li>Web Applications</li>
+    <li>Cloud Infrastructure</li>
+    <li>Software Engineering</li>
+    <li>Technical Writing</li>
+  </ul>
+</section>
+
 <section class="latest-posts">
   <h2>Latest Posts</h2>
   <ul>
