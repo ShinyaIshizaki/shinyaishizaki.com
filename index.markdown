@@ -18,6 +18,9 @@ permalink: /
   <p>
     <a href="https://mental-health.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Mental Health Blog</a>
   </p>
+  <p>
+    <a href="https://lin.ee/6usUO65" target="_blank" rel="noopener noreferrer"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+  </p>
 </section>
 
 <section class="skills-overview">
