@@ -12,6 +12,13 @@
   {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}" target="_blank" rel="noopener noreferrer"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg> <span class="username">{{ site.googleplus_username| escape }}</span></a></li>{%- endif -%}
   {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
   {%- if site.line_url -%}
-    <li><a href="{{ site.line_url }}" target="_blank" rel="noopener noreferrer"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a></li>
+    <li>
+      <a href="{{ site.line_url }}" target="_blank" rel="noopener noreferrer" class="line-link">
+        <svg class="svg-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="#00C300" d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3v4l4-4h9a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+        </svg>
+        <span class="username">Add LINE Friend</span>
+      </a>
+    </li>
   {%- endif -%}
 </ul>
