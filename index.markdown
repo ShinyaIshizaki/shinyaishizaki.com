@@ -18,6 +18,8 @@ permalink: /
   <p>
     <a href="https://mental-health.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Mental Health Blog</a>
   </p>
+  <p>
+  </p>
 </section>
 
 <section class="skills-overview">
