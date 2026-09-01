@@ -19,6 +19,10 @@ permalink: /
     <a href="https://mental-health.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Mental Health Blog</a>
   </p>
   <p>
+    <a href="https://menta.work/invite/YM2SJ2tSsrEeMyQv" target="_blank" rel="noopener noreferrer" class="menta-link">
+      <span class="menta-label">MENTA<br><small>Mentoring Service</small></span>
+      <img src="https://menta.work/resource/img/syokai01.png" alt="MENTA メンター紹介" loading="lazy">
+    </a>
   </p>
 </section>
 
