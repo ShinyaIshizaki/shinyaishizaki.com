@@ -13,6 +13,7 @@
 
 .landing-links p {
   margin: 0;
+  height: 100%;
 }
 
 .landing-links a {
@@ -29,6 +30,8 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
   min-height: 140px;
+  height: 100%;
+  box-sizing: border-box;
   text-align: center;
   font-size: 1.05rem;
   font-weight: 500;
@@ -63,6 +66,98 @@
   font-weight: 400;
   color: #666;
   margin-top: 0.25rem;
+}
+
+.menta-benefit {
+  display: block;
+  color: #555;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0.25rem;
+}
+
+.mentoring-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.mentoring-banner:hover {
+  border-color: #d0d0d0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mentoring-banner img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.mentoring-cta {
+  text-align: center;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  padding: 2.75rem 1.1rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.plan-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.1rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background: #fff;
+  color: #666;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.plan-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.plan-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills-overview {
