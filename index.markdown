@@ -54,13 +54,24 @@ permalink: /
 </section>
 
 <section class="latest-posts">
-  <h2>Latest Posts</h2>
-  <ul>
-    {% for post in site.posts limit: 5 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span>{{ post.date | date: "%Y/%m/%d" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
+  <h2>Latest Tech Blog Posts</h2>
+  {% if site.data.latest_posts and site.data.latest_posts.size > 0 %}
+    <ul>
+      {% for post in site.data.latest_posts %}
+        <li>
+          <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+          {% if post.date %}
+            <span>{{ post.date | date: "%Y/%m/%d" }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>
+      Latest articles are available on my Tech Blog.
+    </p>
+  {% endif %}
+  <p>
+    <a href="https://tech-blog.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Visit the Tech Blog</a>
+  </p>
 </section>

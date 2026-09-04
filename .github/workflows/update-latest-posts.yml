@@ -1,0 +1,36 @@
+name: Update latest Tech Blog posts
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-latest-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Fetch latest posts
+        run: ruby scripts/fetch_latest_posts.rb
+
+      - name: Commit updated post data
+        run: |
+          if git diff --quiet -- _data/latest_posts.json; then
+            echo "No post data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/latest_posts.json
+          git commit -m "Update latest Tech Blog posts"
+          git push
