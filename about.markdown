@@ -16,3 +16,9 @@ I also have experience working with cloud infrastructure, deployment workflows, 
 
 My goal is to create thoughtful, useful, and well-structured solutions while sharing clear technical insights through my blog. I am especially interested in helping others understand complex topics in a practical and approachable way.
 
+## Mentoring
+
+I also provide mentoring for programming beginners, including learning plans, technical questions, error resolution, and career advice.
+
+[Learn more about my mentoring services](/mentoring/)
+
