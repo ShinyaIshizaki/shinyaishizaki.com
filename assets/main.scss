@@ -190,3 +190,155 @@
   color: #555;
   line-height: 1.5;
 }
+
+.password-tool {
+  max-width: 42rem;
+  margin: 1rem 0 2rem;
+  padding: 1.5rem;
+  border: 1px solid #d5dedb;
+  border-radius: 8px;
+  background: #f6f9f7;
+  color: #18332f;
+}
+
+.password-tool__form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.password-tool label,
+.password-tool legend {
+  font-weight: 600;
+}
+
+.password-tool__length {
+  display: grid;
+  grid-template-columns: auto 7rem 1fr;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.password-tool__length input,
+.password-tool__output-row input {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #aabbb5;
+  border-radius: 4px;
+  background: #fff;
+  color: #18332f;
+  font: inherit;
+}
+
+.password-tool__length span {
+  color: #526963;
+  font-size: 0.875rem;
+}
+
+.password-tool__characters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.password-tool__characters legend {
+  margin-bottom: 0.85rem;
+}
+
+.password-tool__characters label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 400;
+}
+
+.password-tool input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  accent-color: #176b61;
+}
+
+.password-tool button {
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid #075a52;
+  border-radius: 4px;
+  background: #075a52;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.password-tool button:hover:not(:disabled) {
+  background: #064840;
+}
+
+.password-tool button:focus-visible,
+.password-tool input:focus-visible {
+  outline: 3px solid #d28a24;
+  outline-offset: 2px;
+}
+
+.password-tool button:disabled {
+  border-color: #879993;
+  background: #879993;
+  cursor: not-allowed;
+}
+
+.password-tool__generate {
+  justify-self: start;
+}
+
+.password-tool__result {
+  margin-top: 1.75rem;
+}
+
+.password-tool__output-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.password-tool__output-row input {
+  font-family: monospace;
+}
+
+.password-tool__status {
+  min-height: 1.5em;
+  margin: 0.5rem 0 0;
+  color: #315b53;
+  font-size: 0.9rem;
+}
+
+.password-tool__privacy {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #d5dedb;
+  color: #526963;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 520px) {
+  .password-tool {
+    padding: 1rem;
+  }
+
+  .password-tool__length {
+    grid-template-columns: auto 7rem;
+  }
+
+  .password-tool__length span {
+    grid-column: 2;
+  }
+
+  .password-tool__characters {
+    grid-template-columns: 1fr;
+  }
+}

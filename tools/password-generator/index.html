@@ -1,0 +1,38 @@
+---
+layout: page
+title: Password Generator
+permalink: /tools/password-generator/
+---
+
+<section class="password-tool" aria-label="Password generator">
+  <form class="password-tool__form" id="password-form">
+    <div class="password-tool__length">
+      <label for="password-length">Length</label>
+      <input id="password-length" name="length" type="number" min="8" max="128" value="20" required>
+      <span>8 to 128 characters</span>
+    </div>
+
+    <fieldset class="password-tool__characters">
+      <legend>Include characters</legend>
+      <label><input type="checkbox" name="character-set" value="lowercase" checked> Lowercase letters</label>
+      <label><input type="checkbox" name="character-set" value="uppercase" checked> Uppercase letters</label>
+      <label><input type="checkbox" name="character-set" value="numbers" checked> Numbers</label>
+      <label><input type="checkbox" name="character-set" value="symbols" checked> Symbols</label>
+    </fieldset>
+
+    <button class="password-tool__generate" type="submit">Generate password</button>
+  </form>
+
+  <div class="password-tool__result">
+    <label for="password-output">Generated password</label>
+    <div class="password-tool__output-row">
+      <input id="password-output" type="text" readonly autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Your password will appear here">
+      <button id="copy-password" type="button" disabled>Copy</button>
+    </div>
+    <p id="password-status" class="password-tool__status" role="status" aria-live="polite"></p>
+  </div>
+
+  <p class="password-tool__privacy">Generated locally in your browser. Nothing is sent to a server.</p>
+</section>
+
+<script src="{{ '/assets/password-generator.js' | relative_url }}" defer></script>
