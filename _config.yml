@@ -22,7 +22,7 @@ title: Shinya Ishizaki's Website
 author: Shinya Ishizaki
 email: shinya.ishizaki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A Japanese software engineer sharing insights on technology and mental health care.
+  A Japanese software engineer sharing practical insights on software development and technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shinyaishizaki.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Shinyaaah0311

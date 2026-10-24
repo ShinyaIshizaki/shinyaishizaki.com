@@ -7,16 +7,13 @@ permalink: /
 <section class="hero">
   <h1>Hello, I’m Shinya Ishizaki.</h1>
   <p>
-    I work as a software engineer while sharing knowledge and insights about technology and mental health care through my blog.
+    I work as a software engineer, sharing practical insights about software development and technology.
   </p>
 </section>
 
 <section class="landing-links">
   <p>
     <a href="https://tech-blog.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Tech Blog</a>
-  </p>
-  <p>
-    <a href="https://mental-health.shinyaishizaki.com/" target="_blank" rel="noopener noreferrer">Mental Health Blog</a>
   </p>
   <p>
     <a href="https://menta.work/invite/YM2SJ2tSsrEeMyQv" target="_blank" rel="noopener noreferrer" class="menta-link">

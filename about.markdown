@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello, I’m Shinya Ishizaki.
 
-I am a software engineer who enjoys building practical solutions and sharing knowledge through writing. This site is a place where I document my experiences in technology, software development, and mental health care.
+I am a software engineer who enjoys building practical solutions and sharing knowledge through writing. This site is a place where I document my experiences in technology and software development.
 
 ## Core Skills
 
