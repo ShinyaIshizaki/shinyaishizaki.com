@@ -5,7 +5,7 @@
 | 項目 | 内容 |
 |------|------|
 | 文書名 | パスワードジェネレーター 外部設計書 |
-| 対象 | `/tools/password-generator/` |
+| 対象 | `https://password-generator.shinyaishizaki.com/` |
 | 作成日 | YYYY-MM-DD |
 | 更新日 | YYYY-MM-DD |
 | 作成者 | 未記入 |
@@ -21,9 +21,12 @@
 | 項目 | 内容 |
 |------|------|
 | ページ名 | Password Generator |
-| URL | `/tools/password-generator/` |
-| 実装ページ | `tools/password-generator/index.html` |
-| クライアントスクリプト | `assets/password-generator.js` |
+| URL | `https://password-generator.shinyaishizaki.com/` |
+| 実装ページ | 独立リポジトリ `password-generator` の `index.html` |
+| スタイル | 独立リポジトリの `styles.css` |
+| クライアントスクリプト | 独立リポジトリの `password-generator.js` |
+| 公開方式 | GitHub Pages（静的ファイル、GitHub Actionsでデプロイ） |
+| オリジン | 公式サイト `https://shinyaishizaki.com` とは別オリジン |
 
 ## 2. 利用者と利用シナリオ
 
@@ -32,7 +35,7 @@
 - その他: 未記入
 
 ### 2.2 基本シナリオ
-1. ページを開く。
+1. 公式サイトのProjectsページから外部のジェネレーターを開く。
 2. パスワード長と含める文字種を指定する。
 3. 「Generate password」を実行する。
 4. 結果を確認し、「Copy」でコピーする。
@@ -80,7 +83,7 @@
 |------------------|------|----------------------|
 | `window.crypto.getRandomValues` | 生成用の安全な乱数取得 | 利用不可なら生成しない |
 | `navigator.clipboard.writeText` | 生成結果のコピー | 拒否・失敗時は手動コピーを案内 |
-| サーバー通信 | なし | 生成値を送信しない |
+| サーバー通信 | GitHub Pagesから静的ファイルを取得 | 生成値を送信しない。外部通信・第三者スクリプトを追加しない |
 
 ## 7. 表示・アクセシビリティ方針
 - すべての入力にラベルを関連付ける。
@@ -96,7 +99,8 @@
 | ID | 内容 | 状態 |
 |----|------|------|
 | TBD-01 | Chrome安定版の最新および1つ前のメジャーバージョンを対象とし、テスト時のバージョンを記録 | 確定 |
-| TBD-02 | 日本語表示を含む文言・ローカライズ方針 | 未着手 |
+| TBD-02 | 独立リポジトリ作成、GitHub Pages有効化、DNS CNAME、HTTPSの設定 | 未着手 |
+| TBD-03 | 日本語表示を含む文言・ローカライズ方針 | 未着手 |
 
 ### 8.2 変更履歴
 | 日付 | 版 | 変更内容 | 作成者 |
