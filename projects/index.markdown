@@ -16,7 +16,7 @@ permalink: /projects/
 
 A simple web app that generates passwords containing digits, uppercase letters, and lowercase letters.
 
-<p><a href="/tools/password-generator/">Open the Password Generator</a></p>
+<p><a href="https://password-generator.shinyaishizaki.com/">Open the Password Generator</a></p>
 
 <p><a href="https://github.com/ShinyaIshizaki/newportfolio/tree/main/JavaScriptApp/PasswordGenerater" target="_blank" rel="noopener noreferrer">View the Password Generator source on GitHub</a></p>
 
