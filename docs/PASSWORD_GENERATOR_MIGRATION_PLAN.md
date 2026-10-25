@@ -22,9 +22,10 @@
 - [x] 独立アプリを `main` へpush（コミット `ff829d1`）
 - [x] GitHub PagesでGitHub Actionsデプロイを有効化
 - [x] GitHub Pagesのカスタムドメインに `password-generator.shinyaishizaki.com` を登録
-- [x] DNS管理画面にCNAMEを追加（GitHub PagesでDNS Check in Progress。反映・検証待ち）
-- [ ] HTTPSが有効であることを確認
-- [ ] テスト仕様書の機能・プライバシー項目を実施
+- [x] DNS管理画面にCNAMEを追加し、GitHub PagesのDNS Check successfulを確認
+- [x] HTTPSで独立URLへアクセスできることを確認
+- [x] ブラウザー上で生成、文字種、コピー、ローカル生成表示を確認
+- [ ] テスト仕様書の全機能・プライバシー項目を実施
 
 設定したDNSレコード:
 
@@ -33,10 +34,10 @@
 | CNAME | `password-generator` | `ShinyaIshizaki.github.io` |
 
 ### Phase B: 公式サイト切替
-- [ ] 新URLのHTTPS、生成、コピー、戻りリンクを確認
-- [ ] `projects/index.markdown` の旧same-originリンクを新URLへ変更
+- [x] 新URLのHTTPS、生成、コピー、戻りリンクを確認
+- [x] `projects/index.markdown` の旧same-originリンクを新URLへ変更
 - [ ] 外部リンクには `target="_blank"` を使う場合 `rel="noopener noreferrer"` を付与
-- [ ] `tools/password-generator/index.html` を公式サイトリポジトリから削除
+- [x] `tools/password-generator/index.html` を公式サイトリポジトリから削除
 - [ ] 公式サイトをビルドし、Projectsページの遷移を確認
 - [ ] 変更を公開し、本番URLから再確認
 
@@ -47,8 +48,9 @@
 ## 5. 既知の制約・手動作業
 
 - 新規リポジトリ作成とGitHub PagesのActionsデプロイ設定は完了。Actions runは成功。
-- DNSレコードはドメイン管理画面で設定済み。GitHub PagesのDNS検証は進行中で、HTTPSはまだ有効化できない。
-- カスタムドメインのDNS検証とHTTPS発行が完了するまで公式サイトのリンク・旧ページを維持する。
+- DNSレコードは設定済みで、GitHub PagesのDNS Check successfulを確認済み。
+- GitHub Pagesは証明書の全世界への反映中と表示していたが、実際のカスタムドメインでHTTPS接続・生成・コピーを確認済み。
+- 全機能・プライバシー項目のテストと公式サイト変更の本番デプロイ確認は未完了。
 - GitHub Pagesのアクセスログや配信キャッシュの扱いをセキュリティ／プライバシー確認書で評価する。
 
 ## 6. 関連文書
@@ -66,3 +68,4 @@
 |------|----|----------|--------|
 | 2026-10-25 | 0.1 | 別オリジン移行計画を作成 | Copilot |
 | 2026-10-25 | 0.2 | DNSレコード設定済み、GitHub Pages検証待ちを記録 | Copilot |
+| 2026-10-25 | 0.3 | 独立URLを検証し、公式サイトリンクを切替 | Copilot |
