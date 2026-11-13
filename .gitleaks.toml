@@ -1,0 +1,36 @@
+title = "gitleaks config"
+
+[allowlist]
+description = "Ignore generated and vendored content"
+paths = [
+  '''^vendor/''',
+  '''^_site/''',
+  '''^node_modules/''',
+  '''^\.venv/''',
+  '''^(\.git|/.*?/\.git)/''',
+  '''^(\.vscode|/.*?/\.vscode)/''',
+]
+
+[[rules]]
+id = "github-pat"
+description = "GitHub personal access token"
+regex = '''ghp_[A-Za-z0-9]{36,}'''
+secretGroup = 0
+entropy = 3.5
+keywords = ["ghp_"]
+
+[[rules]]
+id = "github-pat-legacy"
+description = "GitHub OAuth or related token"
+regex = '''(?:gho|ghu|ghs|ghr)_[A-Za-z0-9]{36,}'''
+secretGroup = 0
+entropy = 3.5
+keywords = ["gho_", "ghu_", "ghs_", "ghr_"]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS access key"
+regex = '''(?i)(?:AKIA|ASIA)[A-Z0-9]{16}'''
+secretGroup = 0
+entropy = 3.5
+keywords = ["AKIA", "ASIA"]

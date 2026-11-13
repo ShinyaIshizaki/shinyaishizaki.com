@@ -20,7 +20,6 @@
 
 title: Shinya Ishizaki's Website
 author: Shinya Ishizaki
-email: shinya.ishizaki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A Japanese software engineer sharing practical insights on software development and technology.
 baseurl: "" # the subpath of your site, e.g. /blog

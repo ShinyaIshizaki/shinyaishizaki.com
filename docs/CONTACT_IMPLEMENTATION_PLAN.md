@@ -25,7 +25,7 @@
 | メリット | 詳細 |
 |---------|------|
 | **セットアップが簡単** | HTML フォームに Formspree エンドポイント指定で完成 |
-| **メール自動送信** | 送信データが直接メール（shinya.ishizaki@gmail.com）に届く |
+| **メール自動送信** | 送信データが直接メール（redacted-contact-address@example.com）に届く |
 | **スパム対策** | Formspree が CAPTCHA やスパム検出機能を提供 |
 | **無料プランあり** | 月50件まで無料（個人用途には十分） |
 | **カスタマイズ可能** | メールテンプレートやリダイレクト先を設定可能 |
@@ -44,7 +44,7 @@
 ```
 1. Formspree (https://formspree.io/) にアクセス
 2. 新規プロジェクト作成
-   - メールアドレス: shinya.ishizaki@gmail.com
+  - メールアドレス: redacted-contact-address@example.com
 3. Form Endpoint URL を取得
    例: https://formspree.io/f/xyzabc123
 4. Contact ページの HTML フォームに統合
@@ -127,7 +127,7 @@
    - Email (メール)
    - Message (段落)
 4. 回答の収集設定
-   - 送信先: shinya.ishizaki@gmail.com に送信通知
+  - 送信先: redacted-contact-address@example.com に送信通知
 5. フォームのリンクを取得
    例: https://forms.gle/xyzabc123
 6. Contact ページに埋め込みまたはリンク
@@ -255,7 +255,7 @@
 │ ─────────────────────────────────────────────  │
 │                                                 │
 │ Alternative Contact Methods:                   │
-│ - Email: shinya.ishizaki@gmail.com             │
+│ - Email: redacted-contact-address@example.com  │
 │ - Twitter: @Shinyaaah0311                      │
 │ - GitHub: ShinyaIshizaki                       │
 │ - LINE: [Add LINE Friend]                      │
@@ -298,7 +298,7 @@ Please fill out the form below, and I'll get back to you as soon as possible.
 
 If you prefer to reach out directly:
 
-- **Email:** [shinya.ishizaki@gmail.com](mailto:shinya.ishizaki@gmail.com)
+- **Email:** [redacted-contact-address@example.com](mailto:redacted-contact-address@example.com)
 - **Twitter:** [@Shinyaaah0311](https://twitter.com/Shinyaaah0311)
 - **GitHub:** [ShinyaIshizaki](https://github.com/ShinyaIshizaki)
 - **LINE:** [Add me on LINE](https://lin.ee/6usUO65)
@@ -321,7 +321,7 @@ Have questions or want to collaborate? I'd love to hear from you!
 
 If you have difficulty with the form above:
 
-- **Email:** [shinya.ishizaki@gmail.com](mailto:shinya.ishizaki@gmail.com)
+- **Email:** [redacted-contact-address@example.com](mailto:redacted-contact-address@example.com)
 - **Twitter:** [@Shinyaaah0311](https://twitter.com/Shinyaaah0311)
 - **GitHub:** [ShinyaIshizaki](https://github.com/ShinyaIshizaki)
 - **LINE:** [Add me on LINE](https://lin.ee/6usUO65)

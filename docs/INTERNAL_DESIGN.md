@@ -103,7 +103,7 @@ shinyaishizaki.com/
 # サイト設定
 title: Shinya Ishizaki's Website
 author: Shinya Ishizaki
-email: shinya.ishizaki@gmail.com
+email: redacted-contact-address@example.com
 description: A Japanese software engineer sharing insights on technology and mental health care.
 baseurl: ""
 url: "https://shinyaishizaki.com"
