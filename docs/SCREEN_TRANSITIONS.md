@@ -157,7 +157,7 @@
 │ ┌──────────────────────────────────────────────────────┐   │
 │ │ SNS Links:                                           │   │
 │ │ [GitHub] [Twitter] [LINE]                            │   │
-│ │ Email: shinya.ishizaki@gmail.com                     │   │
+│ │ Email: redacted-contact-address@example.com          │   │
 │ │ © 2026 Shinya Ishizaki. All rights reserved.         │   │
 │ └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
@@ -546,7 +546,7 @@ MENTA （外部サービス）
   │
   ├─→ LINE: https://lin.ee/6usUO65
   │
-  └─→ Email: shinya.ishizaki@gmail.com
+  └─→ Email: redacted-contact-address@example.com
 ```
 
 ---
