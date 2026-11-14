@@ -34,7 +34,7 @@ bundle exec jekyll serve
 
 * `/mentoring/`: MENTAメンタリングサービスの案内
 
-* `/contact/` : 問い合わせフォーム設置ページ
+* Contactページとフォームのソースは `contact/` と `assets/` に保持していますが、公開準備が整うまでサイト出力から除外しています。
 
 ## 問い合わせフォームプロジェクト
 
@@ -43,7 +43,7 @@ bundle exec jekyll serve
 * GitHub Projects: `https://github.com/users/ShinyaIshizaki/projects/12`
 * 目的: サイト訪問者からの依頼・質問・メンタリング相談を、スパムを抑えた安全な形で受け付ける
 * 計画方針:
-  * 公式サイト内に `/contact/` を追加する
+  * バックエンドを含む安全な送信経路の準備後に `/contact/` を公開する
   * フォーム入力時に Cloudflare Turnstile でボット対策を行う
   * サーバーサイドの処理は Cloudflare Workers で実装する
   * 実際のメール送信は Resend などのAPIを利用する
