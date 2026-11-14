@@ -95,16 +95,30 @@ GitHub Actionsの `Update latest Tech Blog posts` ワークフローでも、RSS
 
 ```text
 .
+├── .github/
+│   └── workflows/            # GitHub Actions (Gitleaks、RSS更新)
 ├── _data/                    # RSSから取得した記事データ
-├── _includes/                # 共通テンプレート
-├── assets/                   # CSSなどのアセット
+├── _includes/                # 共通レイアウト・ソーシャルリンク
+├── about/                    # Aboutページ
+├── assets/                   # SCSS、JavaScriptなどのアセット
+├── contact/                  # Contactページ
+├── docs/                     # 設計書、要件、実装計画
 ├── mentoring/                # メンタリングページ
+├── projects/                 # Projectsページ
 ├── scripts/                  # RSS取得スクリプト
-├── about.markdown            # Aboutページ
-├── index.markdown            # トップページ
+├── 404.html                  # 404ページ
+├── CNAME                     # GitHub Pagesのカスタムドメイン
+├── .gitignore                # Gitの除外設定
+├── Gemfile                   # Ruby依存関係
+├── Gemfile.lock              # Ruby依存関係の固定バージョン
+├── README.md                 # リポジトリの概要と開発手順
 ├── _config.yml               # Jekyll設定
-└── Gemfile                   # Ruby依存関係
+├── .gitleaks.toml            # Gitleaks設定
+├── .pre-commit-config.yaml   # pre-commit設定
+└── index.markdown            # トップページ
 ```
+
+各ページディレクトリには `index.markdown` があり、ディレクトリ名に対応するURLで公開されます。`_site/` はJekyllのビルド出力、`vendor/` はBundlerの依存パッケージ、`.bundle/`・`.venv/`・`.jekyll-cache/` はローカル環境用のディレクトリです。
 
 ## 公開
 
