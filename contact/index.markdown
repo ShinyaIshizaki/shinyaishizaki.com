@@ -53,8 +53,8 @@ permalink: /contact/
 </div>
 
 <!-- Cloudflare Turnstile API Script -->
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-<script src="{{ '/assets/contact.js' | relative_url }}" defer></script>
+<!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
+<!-- <script src="{{ '/assets/contact.js' | relative_url }}" defer></script> -->
 
 ## 連絡の目安
 
